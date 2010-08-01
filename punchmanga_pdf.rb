@@ -9,6 +9,11 @@
 #   Starting chapter: 10 (default is 0)
 #   Last chapter: 50 (default is -1, which is everything)
 #
+# This scripts was adapted on script made by Fábio Akita www.akitaonrails.com.br
+#
+# Create by Maykon Luís Capellari
+# E-mail: maykon_capellari@yahoo.com.br
+
 require 'rubygems'
 require 'enumerator'
 require 'prawn'
