@@ -1,0 +1,65 @@
+h1. PunchManga Downloader
+
+* http://github.com/maykon/Punch-Manga-Downloader
+
+h1. DESCRIPTION
+
+Scripts para baixar mangas do site http://www.punchmangas.com.br e criar pdf dos volumes.
+
+h2. Dependencies
+
+* ruby 1.8.6
+* mechanize[http://mechanize.rubyforge.org]
+* nokogiri[http://nokogiri.rubyforge.org]
+* open-uri
+
+h2. SUPPORT:
+
+If you need support send e-mailto:
+
+  * maykon_capellari@yahoo.com.br
+
+The bug tracker is available here:
+
+  * http://github.com/maykon/Punch-Manga-Downloader/issues
+
+h2. Usage
+
+Put this script in your PATH and download from punchmangas.com.br like this:
+<pre>
+	<code>
+		punch_downloader.rb Bleach [chapter number]
+	</code>
+</pre>
+
+You will find the downloaded chapters under $HOME/Documents/PunchManga/Bleach.
+
+If you run this script without arguments, it will check your local manga downloads and check if there are any new chapters.
+
+For generate PDFs for the PunchManga downloaded images:
+<pre>
+	<code>
+		ruby punchmanga_pdf.rb Bleach 5 10 50
+	</code>
+</pre>
+
+Meaning:
+ * Manga: Bleach (name of the folder)
+ * Number of volumes: 5 (number of generated PDF files)
+ * Starting chapter: 10 (default is your first chapter)
+ * Last chapter: 50 (default is your last chapter)
+
+h2. Authors
+
+Copyright (c) 2010:
+
+* {Maykon Luís Capellari}[http://github.com/maykon] (maykon_capellari@yahoo.com.br)}
+  
+h2. License
+
+This library is distributed under the GPL.  Please see the LICENSE file.
+
+h2. Credits
+
+* Original project and most of the heavy lifting: {Fábio Akita} [http://www.akitaonrails.com.br] (@akitaonrails)
+* Hacks and some snippets: @maykoncapellari
