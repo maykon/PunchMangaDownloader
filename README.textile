@@ -1,6 +1,6 @@
 h1. PunchManga Downloader
 
-* http://github.com/maykon/Punch-Manga-Downloader
+* http://github.com/maykon/PunchMangaDownloader
 
 h1. DESCRIPTION
 
@@ -21,7 +21,7 @@ If you need support send e-mail to:
 
 The bug tracker is available here:
 
-  * http://github.com/maykon/Punch-Manga-Downloader/issues
+  * http://github.com/maykon/PunchMangaDownloader/issues
 
 h2. Usage
 
