@@ -26,7 +26,7 @@ The bug tracker is available here:
 h2. Usage
 
 Put this script in your PATH and download from punchmangas.com.br like this:
-<pre><code>punch_downloader.rb Bleach [chapter number]</code></pre>
+<pre><code>ruby punch_downloader.rb Bleach [chapter number]</code></pre>
 
 You will find the downloaded chapters under $HOME/Documents/PunchManga/Bleach.
 
