@@ -15,7 +15,7 @@ h2. Dependencies
 
 h2. SUPPORT:
 
-If you need support send e-mailto:
+If you need support send e-mail to:
 
   * maykon_capellari@yahoo.com.br
 
