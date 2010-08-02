@@ -45,11 +45,11 @@ h2. Authors
 
 Copyright (c) 2010:
 
-* {Maykon Luís Capellari}[http://github.com/maykon] (maykon_capellari@yahoo.com.br)}
+* Maykon Luís Capellari [http://github.com/maykon] (maykon_capellari@yahoo.com.br)}
 
 h2. Credits
 
-* Original project and most of the heavy lifting: {Fábio Akita} [http://www.akitaonrails.com.br] (@akitaonrails)
+* Original project and most of the heavy lifting: Fábio Akita [http://www.akitaonrails.com.br] (@akitaonrails)
 * Hacks and some snippets: @maykoncapellari
   
 h2. License
