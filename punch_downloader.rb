@@ -173,3 +173,4 @@ begin
   ncap = ncap - 1
   chapter_link = cap.options[ncap].value unless ncap < 0
 end until ncap < 0
+puts "\nDownload complete!"
