@@ -19,7 +19,7 @@ require 'nokogiri'
 require 'open-uri'
 
 simple_output = true # coloque como false para ter mais informações durante o download das páginas
-save_as_cbz = false # coloque como true para salvar os capítulos como CBZ. Requer a gem rubyzip
+save_as_cbz = true # coloque como true para salvar os capítulos como CBZ. Requer a gem rubyzip
 manga_download_folder = File.join(ENV['HOME'],"/Documents/PunchManga/") # esta é a página em que serão salvos os capítulos
 manga_root = "http://www.punchmangas.com.br/"
 agent = Mechanize.new { |agent| agent.follow_meta_refresh = true }
@@ -123,11 +123,17 @@ begin
   index = npage.option_with(:selected => true).value.to_i  
   page = index
   
+  print "Downloading...0%"
+  
+  tpages = npage.options.nitems #total de páginas
+  percent = 0
+  
   if save_as_cbz
     zipfile = File.join(manga_download_folder, manga_name, "#{chapter_number}.cbz")
     File.delete(zipfile) if File.exists?(zipfile)
     Zip::ZipFile.open(zipfile, Zip::ZipFile::CREATE) do |zf|
-      while page <= npage.options.nitems
+      while page <= tpages
+        percent = (page * 100)/tpages
         # download image file    
         img_uri = agent.page.search("//script")[3].text.gsub(link).first
         page = "0#{page}" if page.to_i < 10
@@ -135,7 +141,7 @@ begin
         image_file = img_uri.split("/").last
         zf.file.open(image_file, 'wb') do |file|
           if simple_output
-            print '.'
+            print "...#{percent}%"
           else
             puts "Downloading #{img_uri} to #{image_file}"
           end
@@ -150,7 +156,9 @@ begin
     
   else
     
-    while page <= npage.options.nitems
+    while page <= tpages
+      percent = (page * 100)/tpages
+      
       # download image file    
       img_uri = agent.page.search("//script")[3].text.gsub(link).first
       page = "0#{page}" if page.to_i < 10
@@ -158,7 +166,7 @@ begin
       image_file = File.join(chapter_folder, img_uri.split("/").last)
       open(image_file, 'wb') do |file|
         if simple_output
-          print '.'
+          print "...#{percent}%"
         else
           puts "Downloading #{img_uri} to #{image_file}"
         end
