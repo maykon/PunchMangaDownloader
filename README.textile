@@ -52,6 +52,7 @@ h2. Credits
 
 * Original project and most of the heavy lifting: Fábio Akita [http://www.akitaonrails.com.br] (@akitaonrails)
 * Hacks and some snippets: @maykoncapellari
+* Add suport to export for .cbz and others improvments: Marco Antônio Pompei [marco.fowl@gmail.com] (marcopompei)
   
 h2. License
 
