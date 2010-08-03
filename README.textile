@@ -12,6 +12,7 @@ h2. Dependencies
 * mechanize[http://mechanize.rubyforge.org]
 * nokogiri[http://nokogiri.rubyforge.org]
 * open-uri
+* rubyzip (only if you enable "save as .cbz")
 
 h2. SUPPORT:
 
