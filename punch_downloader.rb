@@ -20,7 +20,8 @@ require 'open-uri'
 
 simple_output = true # coloque como false para ter mais informações durante o download das páginas
 save_as_cbz = true # coloque como true para salvar os capítulos como CBZ. Requer a gem rubyzip
-manga_download_folder = File.join(ENV['HOME'],"/Documents/PunchManga/") # esta é a página em que serão salvos os capítulos
+windows_sys = ENV['USERPROFILE']
+manga_download_folder = windows_sys.nil? ? File.join(ENV['HOME'],"/Documents/PunchManga/") : File.join(ENV['USERPROFILE'], "\\Documents\\PunchManga\\") # esta é a página em que serão salvos os capítulos
 manga_root = "http://www.punchmangas.com.br/"
 agent = Mechanize.new { |agent| agent.follow_meta_refresh = true }
 
