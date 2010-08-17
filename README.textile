@@ -27,17 +27,17 @@ The bug tracker is available here:
 h2. Usage
 
 Put this script in your PATH and download from punchmangas.com.br like this:
-<pre><code>ruby punch_downloader.rb Bleach [chapter number]</code></pre>
+<pre><code>ruby punch_downloader.rb Highschool-of-the-Dead [chapter number]</code></pre>
 
-You will find the downloaded chapters under $HOME/Documents/PunchManga/Bleach.
+You will find the downloaded chapters under $HOME/Documents/PunchManga/highschool-of-the-dead.
 
 If you run this script without arguments, it will check your local manga downloads and check if there are any new chapters.
 
 For generate PDFs for the PunchManga downloaded images:
-<pre><code>ruby punchmanga_pdf.rb Bleach 5 10 50</code></pre>
+<pre><code>ruby punchmanga_pdf.rb highschool-of-the-dead 5 10 50</code></pre>
 
 Meaning:
- * Manga: Bleach (name of the folder)
+ * Manga: highschool-of-the-dead (name of the folder)
  * Number of volumes: 5 (number of generated PDF files)
  * Starting chapter: 10 (default is your first chapter)
  * Last chapter: 50 (default is your last chapter)
