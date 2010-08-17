@@ -31,6 +31,8 @@ Put this script in your PATH and download from punchmangas.com.br like this:
 
 You will find the downloaded chapters under $HOME/Documents/PunchManga/highschool-of-the-dead.
 
+For Windows user you will find downloaded chapters under C:\Documents and Settings\[USERNAME]\Documents\PunchManga\highschool-of-the-dead.
+
 If you run this script without arguments, it will check your local manga downloads and check if there are any new chapters.
 
 For generate PDFs for the PunchManga downloaded images:
